@@ -24,7 +24,7 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
 app.use('/login', (req,res) => {
-  res.redirect('https://auth.todaycode.org/login?client_id=6kn128fpk2ijuia7daituipcqn&response_type=code&scope=email+openid&redirect_uri=https://api.todaycode.org/callback&CognitoCloudFrontEndpoint=https%3A%2F%2Fdpp0gtxikpq3y.cloudfront.net&CognitoCloudFrontVersion=20221014152150&CustomerCloudFrontEndpoint=d3pzxyxkde08tg.cloudfront.net&CustomerCloudFrontVersion=20221112052502&SanitizedQueryString=client_id%3D6kn128fpk2ijuia7daituipcqn%26response_type%3Dcode%26scope%3Demail%2Bopenid%26redirect_uri%3Dhttps%3A%2F%2Fapi.todaycode.org%2Fcallback&loginErrorMessage=You+tried+to+access+a+page+that+requires+authentication%2C+please+try+again+after+authenticating')
+  res.redirect('https://auth.todaycode.org/login?client_id=6kn128fpk2ijuia7daituipcqn&response_type=token&scope=email+openid&redirect_uri=https://api.todaycode.org/callback&CognitoCloudFrontEndpoint=https%3A%2F%2Fdpp0gtxikpq3y.cloudfront.net&CognitoCloudFrontVersion=20221014152150&CustomerCloudFrontEndpoint=d3pzxyxkde08tg.cloudfront.net&CustomerCloudFrontVersion=20221112052502&SanitizedQueryString=client_id%3D6kn128fpk2ijuia7daituipcqn%26response_type%3Dcode%26scope%3Demail%2Bopenid%26redirect_uri%3Dhttps%3A%2F%2Fapi.todaycode.org%2Fcallback&loginErrorMessage=You+tried+to+access+a+page+that+requires+authentication%2C+please+try+again+after+authenticating')
 })
 
 app.use("/callback", (req, res) => {
