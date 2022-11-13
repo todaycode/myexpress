@@ -28,7 +28,7 @@ app.use('/login', (req,res) => {
 })
 
 app.use("/callback", (req, res) => {
-  res.send(flatted.stringify(req));
+  res.send(req.query);
 });
 
 // catch 404 and forward to error handler
