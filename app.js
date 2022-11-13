@@ -28,7 +28,7 @@ app.use('/login', (req,res) => {
 })
 
 app.use("/callback", (req, res) => {
-  res.send(req.query);
+  res.send(req.url + "------" + req.originalUrl);
 });
 
 // catch 404 and forward to error handler
